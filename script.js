@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+function loading () {
   const menuIcon = document.querySelector(".menu-icon");
   const sideMenu = document.querySelector(".side-menu");
   const menuItems = document.querySelectorAll(".button");
@@ -35,4 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.addEventListener("scroll", handleScroll);
   handleScroll();
-});
+};
+
+loading();
