@@ -32,10 +32,10 @@ header {
   align-items: center;
   padding: 0 8%;
   box-shadow: 0 2px 8px rgb(59, 57, 57);
-  z-index: 1;
+  z-index: 9999;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.788);
-  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.988);
+  backdrop-filter: blur(7px);
 }
 
 .logo {
