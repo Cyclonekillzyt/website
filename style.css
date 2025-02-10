@@ -809,7 +809,7 @@ nav a:hover {
 
 .contact-container {
   max-width: 500px;
-  width: 100%;
+  width: 90%;
   background: white;
   padding: 30px;
   border-radius: 12px;
@@ -818,7 +818,7 @@ nav a:hover {
 
 .contact-container h2 {
   font-family: "Lexend";
-  font-size: 30px;
+  font-size: 28px;
   color: rgb(44, 42, 44);
 }
 
@@ -841,9 +841,10 @@ form label {
   text-align: left;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 16px;
@@ -854,10 +855,11 @@ form button {
   color: white;
   font-weight: bold;
   border: none;
-  padding: 12px;
+  padding: 14px;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-size: 18px;
 }
 
 form button:hover {
@@ -873,14 +875,80 @@ form button:hover {
   display: inline-block;
   background-color: #25d366;
   color: white;
-  padding: 10px 15px;
+  padding: 12px 18px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
+  font-size: 16px;
 }
 
 .whatsapp-btn:hover {
   background-color: #1da851;
   transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .contact-container h2 {
+    font-size: 24px;
+  }
+
+  .contact-container p {
+    font-size: 14px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  form button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .whatsapp-btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact {
+    padding: 40px 15px;
+  }
+
+  .contact-container {
+    padding: 15px;
+  }
+
+  .contact-container h2 {
+    font-size: 22px;
+  }
+
+  .contact-container p {
+    font-size: 13px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .whatsapp-btn {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
 }
