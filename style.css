@@ -179,6 +179,7 @@ nav a:hover {
   max-width: 660px;
   padding-left: 8%;
   z-index: 5;
+  position: relative;
 }
 
 .heroText h1 {
@@ -204,8 +205,12 @@ nav a:hover {
   font-family: "Inter";
 }
 
-.heroText button {
-  margin-top: 20px;
+.heroText a {
+  position: absolute;
+  text-decoration: none;
+  margin-top: 1em;
+  padding: 1em;
+  text-align: center;
   font-weight: bold;
   font-style: italic;
   color: #000000c0;
@@ -221,7 +226,7 @@ nav a:hover {
   -o-transition: 200ms ease-in-out;
 }
 
-.heroText button:hover {
+.heroText a:hover {
   background-color: #e28b08c9;
   color: white;
   border-radius: 20px;
