@@ -68,3 +68,19 @@ document
       "Error sending message.";
   }
 });
+
+const testHover = document.querySelectorAll(".testScroll");
+const prices = document.querySelectorAll(".price");
+const plast = document.querySelectorAll(".plast");
+testHover.forEach((element, index) => {
+  element.addEventListener("mouseover", () => {
+    prices[index].classList.add("hover");
+    plast[index].style.marginBottom = "1em"
+  });
+
+  element.addEventListener("mouseleave", () => {
+    prices[index].classList.remove("hover");
+    plast[index].style.marginBottom = "0.5em"
+  });
+});
+

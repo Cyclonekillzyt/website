@@ -248,6 +248,67 @@ nav a:hover {
   width: 100%;
 }
 
+#why-choose-us {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fdf8f4;
+}
+
+#why-choose-us h2 {
+  font-size: 2.5rem;
+  color: #ee920b;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Lexend", sans-serif;
+}
+
+.why-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.why-box {
+  flex: 1;
+  min-width: 250px;
+  max-width: 250px;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.why-box img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.why-box h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.why-box p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.why-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
 .exploreIntro {
   margin-top: 60px;
   overflow-wrap: break-word;
@@ -439,6 +500,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10vh;
 }
 
 .shopImages {
@@ -449,6 +511,7 @@ nav a:hover {
 }
 
 .shopImages div {
+  text-align: center;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -495,7 +558,7 @@ nav a:hover {
 }
 
 .shopImages div p {
-  margin-top: 10px;
+  margin-top: 0.5em;
   font-family: "Lexend";
 }
 
@@ -526,12 +589,44 @@ nav a:hover {
   font-size: 16px;
   color: #777;
   font-weight: 500;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: all 0.3s ease, color 0.3s ease;
+  margin-bottom: 0.5em;
+  -webkit-transition: all 0.3s ease, color 0.3s ease;
+  -moz-transition: all 0.3s ease, color 0.3s ease;
+  -ms-transition: all 0.3s ease, color 0.3s ease;
+  -o-transition: all 0.3s ease, color 0.3s ease;
 }
 
 .plast:hover {
   transform: scale(1.05);
   color: #555;
+}
+
+.plast + span{
+  position: absolute;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ee920b;
+}
+
+.price {
+  bottom: -30px;
+  visibility: hidden;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+}
+
+.hover{
+  visibility: visible;
+  bottom: 1%;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
 }
 
 @media (max-width: 1024px) {
@@ -892,6 +987,62 @@ form button:hover {
   background-color: #1da851;
   transform: scale(1.05);
 }
+
+.contact-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-info h3 {
+  font-size: 20px;
+  font-family: "Lexend";
+  color: rgb(44, 42, 44);
+  margin-bottom: 8px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  font-family: "Inter";
+  color: rgba(84, 95, 69, 0.795);
+}
+
+.contact-info a {
+  color: #ee920b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.socials {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.socials h3 {
+  font-size: 20px;
+  font-family: "Lexend";
+  color: rgb(44, 42, 44);
+  margin-bottom: 10px;
+}
+
+.socials a {
+  font-size: 16px;
+  font-family: "Inter";
+  color: #ee920b;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.socials a:hover {
+  color: #d87f08;
+  text-decoration: underline;
+}
+
 
 @media (max-width: 768px) {
   .contact-container {
